@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Máy tính Đơn Giản </h1>
+<input type="text" id="a" >
+<input type="text" id="b"><br>
+<button onclick="ab()">cộng</button>
+<button onclick="ac()">trừ</button>
+<button onclick="ad()">nhân</button>
+<button onclick="af()">chia</button>
+<script>
+    function ab(){
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let cong = a+b
+        alert(+cong)
+    }
+    function ac(){
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let tru = a-b
+        alert(+tru)}
+    function ad(){
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            let nhan = a*b
+            alert(+nhan)}
+    function af(){
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let tria = a/b
+        alert(+tria)}
+</script>
+</body>
+</html>

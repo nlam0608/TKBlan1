@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Tính chỉ cố BMI </h1>
+    <input type="text" id="cn"> Cân nặng
+    <input type="text" id="cc"> Chiều cao
+    <select >
+        <option >WHO</option>
+        <option >IDI & WPRO</option>
+    </select><br>
+    <button onclick="abc()" id="kt">kết quả</button>
+    <script>
+        function abc(){
+            let q = +document.getElementById("cn").value;
+            let w = +document.getElementById("cc").value;
+            let ketqua= q/[(w)*2]
+            document.getElementById("kt").innerText = "kết quả";
+            if (ketqua <18.5){
+                document.getElementById("kt").innerText="cân nặng thấp";
+            }
+            if (ketqua >=15.5 &&ketqua <=24.9){
+                document.getElementById("kt").innerText="cân nặng trung bình";
+                    if (ketqua >=25){
+                        document.getElementById("kt").innerText = "thừa cân";
+                    }
+
+
+            }
+        }
+    </script>
+</div>
+</body>
+</html>

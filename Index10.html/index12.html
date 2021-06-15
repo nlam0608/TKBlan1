@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="background-image: url("")">
+    <h1>Chuyển đổi tiền tệ </h1>
+    <input type="text" id="a">
+    <select id="b">
+        <option value="1">USD</option>
+        <option value="22000">VND</option>
+    </select>
+    <select id="c">
+        <option value="22000">VND</option>
+        <option value="1">USD</option>
+    </select>
+    <button onclick="">chuyển đổi</button>
+    <script>
+        function abc(){
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            let c = +document.getElementById("c").value;
+            let ketqua= a*(c/b)
+            alert(+ketqua)
+        }
+    </script>
+
+</div>
+<div>
+
+</div>
+
+</body>
+</html>
