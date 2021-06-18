@@ -5,14 +5,29 @@
     <title>Title</title>
 </head>
 <body>
-<div>
-  <div>
-    <div class="container">
-      <div>
-        <div class="box">A box</div>
-      </div>
-    </div>
-  </div>
+<script>
 
+    let weight=prompt("Nhap vao can nang cua ban:");
+    let height = prompt("Nhap vao chieu cao cua ban:");
+    let BMI = weight/(height*height);
+    if (BMI < 18)
+        document.write("Underweight");
+    else if (BMI < 22.0)
+        document.write("Normal");
+    else if (BMI > 25.0)
+        document.write("Overweight");
+    else
+        document.write("Obese");
+    let IDI = weight/(height*height);
+    if (IDI < 18.5)
+        document.write("Underweight");
+    else  if (IDI < 23)
+        document.write("Normal");
+    else if (IDI > 25)
+        document.write("Overweight");
+    else
+        document.write("Obese")
+
+</script>
 </body>
 </html>
